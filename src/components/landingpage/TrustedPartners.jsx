@@ -1,13 +1,17 @@
 import { TrustedUnderline } from "../../assets/icons/Icon"
-import Partners from "./Partners"
+// import Partners from "./Partners"
 
-const partners = [
-  'Partner1',
-  'Partner2',
-  'Partner3',
-  'Partner4',
-  'Partner5',
-]
+// const partners = [
+//   {
+//     name: 'Partner1',
+//     logo: ''
+//   }
+//   'Partner1',
+//   'Partner2',
+//   'Partner3',
+//   'Partner4',
+//   'Partner5',
+// ]
 
 const TrustedPartners = () => {
   return (
@@ -20,8 +24,27 @@ const TrustedPartners = () => {
           <TrustedUnderline />
         </div>
       </div>
-      <div className="pt-6">
-        <Partners partners={partners} />
+      <div className="pt-6 flex animate-slide space-x-4">
+        {/* <Partners partners={partners} /> */}
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
+        <div>Icon 1</div>
       </div>
     </div>
   )

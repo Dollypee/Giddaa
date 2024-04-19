@@ -466,3 +466,16 @@
   border: 1px solid grey;
   cursor: pointer;
 }
+
+.animate-slide{
+  animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
