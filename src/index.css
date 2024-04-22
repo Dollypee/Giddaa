@@ -282,9 +282,17 @@
   .giddaa-heading-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 32px;
+  }
+
+  .giddaa-heading-three-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
   }
 
   .giddaa-heading-four {
@@ -293,6 +301,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
+  }
+
+  .giddaa-heading-four-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .giddaa-heading-five {
@@ -335,18 +351,26 @@
     line-height: 32px;
   }
 
+  .giddaa-normal-text-one-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
   .giddaa-normal-text-two {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 32px;
   }
 
   .giddaa-normal-text-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--giddaa-font-weight-medium);
     font-size: 14px;
     line-height: 20px;
   }
@@ -370,7 +394,7 @@
   .giddaa-small-text-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 12px;
     line-height: 12px;
   }
@@ -389,12 +413,28 @@
     color: var(--dark-grey-4b4b4b);
   }
 
-  .giddaa-bg-metrics{
+  .giddaa-text-off-white{
+    color: var(--giddaa-color-fcfcfc);
+  }
+
+  .giddaa-bg-light-accent-green{
     background: var(--light-accent-green-f3faf2);
+  }
+
+  .giddaa-bg-tertiary-yellow {
+    background: var(--tertiary-yellow-f5f5de);
+  }
+
+  .giddaa-bg-light-grey{
+    background: var(--light-grey-f0f0f0);
   }
 
   .giddaa-bg-trusted-partners{
     background: var(--tertiary-yellow-f5f5de);
+  }
+
+  .giddaa-bg-trusted-persons{
+    background: var(--mid-accent-green-e9f5e7);
   }
 
   .giddaa-navbar {
@@ -416,6 +456,12 @@
 
   .giddaa-button-transparent {
     background-color: transparent;
+    color: var(--primary-335f32);
+    border: 2px solid var(--primary-335f32);
+  }
+
+  .giddaa-button-white {
+    background-color: white;
     color: var(--primary-335f32);
     border: 2px solid var(--primary-335f32);
   }
@@ -467,6 +513,7 @@
   cursor: pointer;
 }
 
+/* Extra Styles */
 .animate-slide{
   animation: slide 50s linear infinite;
 }
@@ -476,6 +523,37 @@
     transform: translateX(0);
   }
   100%{
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee .marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+}
+
+.trust-us-rect-transform{
+  transform: matrix(0.99, -0.1, 0.1, 0.99, 0, 0);
+}
+.trust-us-rect{
+  background: var(--white-ffffff);
+  box-shadow: 0px 3px 6px var(--primary-335f32);
+  border: 2px solid var(--primary-335f32);
 }

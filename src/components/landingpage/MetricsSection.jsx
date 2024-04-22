@@ -16,8 +16,8 @@ const metrics = [
 ]
 const MetricsSection = () => {
   return (
-    <div className="giddaa-bg-metrics min-h-20 ">
-      <div className="flex flex-col lg:flex-row justify-evenly items-center">
+    <div className="giddaa-bg-light-accent-green min-h-20 py-5">
+      <div className="flex flex-col lg:flex-row lg:justify-evenly items-center">
         {metrics.map((metric) => (
           <div key={metric.name} className="flex flex-col items-center py-3">
             <h1 className="giddaa-heading-one-millik giddaa-primary">{metric.value}</h1>
