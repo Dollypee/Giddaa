@@ -1,3 +1,5 @@
+import { ArrowIcon, FacebookIcon, InstagramIcon, LinkedInIcon, TiktokIcon, TwitterIcon, WhatsappIcon } from "../../assets/icons/Icon";
+
 const contents = [
   {
     title: "Developers",
@@ -29,28 +31,20 @@ const contents = [
 ];
 
 const socials = [
-  "linkedin.svg",
-  "twitter.svg",
-  "instagram.svg",
-  "tik-tok.svg",
-  "facebook.svg",
+  <LinkedInIcon key={'linkedin'} />,
+  <TwitterIcon key={'twitter'} />,
+  <InstagramIcon key={"instagram"} />,
+  <TiktokIcon key={'tiktok'} />,
+  <FacebookIcon key={'facebook'} />,
 ];
 
 const Footer = () => {
   return (
     <div className="flex flex-col gap-12 items-center bg-primary p-14">
       <button className="flex gap-4 items-center bg-white py-4 px-6 rounded-full">
-        <img
-          src="./src/assets/icons/whatsapp.svg"
-          alt="whatsapp"
-          className="w-8 h-8"
-        />
+        <WhatsappIcon />
         <p>Join our Whatsapp Community </p>
-        <img
-          src="./src/assets/icons/arrow.svg"
-          alt="arrow"
-          className="text-primary"
-        />
+        <ArrowIcon />
       </button>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-16 lg:gap-32 justify-between text-white">
@@ -70,7 +64,7 @@ const Footer = () => {
       <div className="flex gap-2">
         {socials.map((social, i) => (
           <div key={i} className="">
-            <img src={`./src/assets/icons/${social}`} alt={social} />
+            {social}
           </div>
         ))}
       </div>

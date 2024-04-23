@@ -1,3 +1,6 @@
+import { DropdownIcon, PrivateSectorIcon } from "../../assets/icons/Icon";
+import { Private_Workers } from "../../assets/images/images";
+
 const points = [
   "Work From “Your Own Home”",
 
@@ -14,11 +17,7 @@ const PrivateSectorWork = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 bg-[#c3b40a] bg-opacity-[10%] rounded-full">
-            <img
-              src="./src/assets/icons/private-sector.svg"
-              alt="ewef"
-              className=""
-            />
+            <PrivateSectorIcon />
           </div>
 
           <div className="">
@@ -38,11 +37,10 @@ const PrivateSectorWork = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {points.map((point, i) => (
               <div key={i} className="flex items-center gap-4 cursor-pointer">
-                <img
-                  src="./src/assets/icons/drop-down.svg"
-                  alt="drop-down"
-                  className="w-5 h-5"
-                />
+                <div className="w-5 h-5">
+                  <DropdownIcon
+                  />
+                </div>
                 <p className="text-primary giddaa-heading-five">{point}</p>
               </div>
             ))}
@@ -50,9 +48,9 @@ const PrivateSectorWork = () => {
         </div>
         <div className="w-full h-full">
           <img
-            src="./src/assets/images/private-workers.png"
-            alt="we serve"
-            // className="w-50% h-50%"
+            src={Private_Workers}
+            alt="Private Workers"
+          // className="w-50% h-50%"
           />
         </div>
       </div>

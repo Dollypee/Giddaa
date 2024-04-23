@@ -1,4 +1,5 @@
-import { Underline } from "../../assets/icons/Icon";
+import { DiasporaIcon, DropdownIcon, Underline } from "../../assets/icons/Icon";
+import { WeServe } from "../../assets/images/images";
 
 const points = [
   "No Agency Fees. Giddaa Is Free!",
@@ -27,11 +28,7 @@ const WhoWeServe = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 bg-[#c3b40a] bg-opacity-[10%] rounded-full">
-            <img
-              src="./src/assets/icons/diaspora.svg"
-              alt="dispora"
-              className=""
-            />
+            <DiasporaIcon />
           </div>
 
           <div className="">
@@ -50,11 +47,10 @@ const WhoWeServe = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {points.map((point, i) => (
               <div key={i} className="flex items-center gap-4 cursor-pointer">
-                <img
-                  src="./src/assets/icons/drop-down.svg"
-                  alt="drop-down"
-                  className="w-5 h-5"
-                />
+                <div className="w-5 h-5">
+                  <DropdownIcon
+                  />
+                </div>
                 <p className="text-primary giddaa-heading-five">{point}</p>
               </div>
             ))}
@@ -62,9 +58,9 @@ const WhoWeServe = () => {
         </div>
         <div className="w-full h-full">
           <img
-            src="./src/assets/images/we-serve.png"
+            src={WeServe}
             alt="we serve"
-            // className="w-50% h-50%"
+          // className="w-50% h-50%"
           />
         </div>
       </div>

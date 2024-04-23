@@ -8,6 +8,10 @@ import Rabbit from "./rabbit.png"
 import Horse from "./horse.png"
 import ListStyle_RightArrow from "./listpointer.svg"
 import Logo from "./Logo.png"
+import WeServe from "./we-serve.png"
+import Public_Workers from './public-workers.png'
+import Private_Workers from './private-workers.png'
+import RemoteMan from './mnaa.png'
 
 
 export {
@@ -20,5 +24,9 @@ export {
   Rabbit,
   Horse,
   ListStyle_RightArrow,
-  Logo
+  Logo,
+  WeServe,
+  Public_Workers,
+  Private_Workers,
+  RemoteMan
 }

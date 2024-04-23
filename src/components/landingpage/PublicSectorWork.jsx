@@ -1,3 +1,6 @@
+import { DropdownIcon, PublicSectorIcon } from "../../assets/icons/Icon";
+import { Public_Workers } from "../../assets/images/images";
+
 const points = ['Have A Place You Can Call Yours!', 'Don’t Let Rent Go Up On You, Again!!', 'Build A Solid Foundation For Your Family.', 'No Agency Fees. Giddaa is Free!'];
 
 const PublicSectorWork = () => {
@@ -6,10 +9,7 @@ const PublicSectorWork = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 rounded-full bg-white">
-            <img
-              src="./src/assets/icons/public-sector.svg"
-              alt="ewef"
-              className=""
+            <PublicSectorIcon
             />
           </div>
 
@@ -30,11 +30,10 @@ const PublicSectorWork = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {points.map((point, i) => (
               <div key={i} className="flex items-center gap-4 cursor-pointer">
-                <img
-                  src="./src/assets/icons/drop-down.svg"
-                  alt="drop-down"
-                  className="w-5 h-5"
-                />
+                <div className="w-5 h-5">
+                  <DropdownIcon
+                  />
+                </div>
                 <p className="text-primary giddaa-heading-five">{point}</p>
               </div>
             ))}
@@ -42,9 +41,9 @@ const PublicSectorWork = () => {
         </div>
         <div className="w-full h-full">
           <img
-            src="./src/assets/images/public-workers.png"
-            alt="we serve"
-            // className="w-50% h-50%"
+            src={Public_Workers}
+            alt="Public workers"
+          // className="w-50% h-50%"
           />
         </div>
       </div>
