@@ -643,7 +643,7 @@
 .marquee .marquee-content {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+  animation: marquee 50s linear infinite; /* Adjust duration as needed */
 }
 
 .trust-us-rect-transform{
