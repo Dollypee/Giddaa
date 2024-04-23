@@ -1,0 +1,77 @@
+const cards = [
+  {
+    icon: "scam-free.svg",
+    title: "Stay Scam Free!",
+    message:
+      "We partner directly with trusted banks and developers. Your applications are sent straight to them, eliminating the need for agents, close relatives or friends. We connect you directly to the source.",
+  },
+  {
+    icon: "streamline-off.svg",
+    title: "Streamline Your Search    ",
+    message:
+      "We simplify your property search by presenting comprehensive information in a visual and easily understandable format, making decision making easier and quicker for you along your journey.      ",
+  },
+  {
+    icon: "multiple-options-off.svg",
+    title: "Multiple Purchase Options",
+    message:
+      "We provide you with a diverse range of housing options and flexible financing plans, ensuring you have a wide selection of choices to suit your preferences and current financial situation.",
+  },
+  {
+    icon: "pay-online-off.svg",
+    title: "Pay Online & Track All Payments",
+    message:
+      "Pay online and track every single payment you make. We make your transactions clear as day between you and the partner you purchase from ,be it a property developer or bank.",
+  },
+  {
+    icon: "afford-off.svg",
+    title: "Find What You Can Afford",
+    message:
+      "We use affordability tags to visually display properties and financing plans you can afford based on age and income, which could help you simplify your decision-making.",
+  },
+  {
+    icon: "apply-online-off.svg",
+    title: "Apply Online — in 5 Mins, and Track Your Application.",
+    message:
+      "Pay online and track every single payment you make. We make your transactions clear as day between you and the partner you purchase from ,be it a property developer or bank.",
+  },
+  {
+    icon: "virtual-viewings-off.svg",
+    title: "See It For Yourself — Virtual Viewings",
+    message:
+      "Living abroad? We offer a service that allows you to view the property through a video call. We also send a report of the condition of the property after the viewing. We’re not quite at the VR level yet. 😁",
+  },
+  {
+    icon: "manage-terms-off.svg",
+    title: "Manage Terms and Documentation",
+    message:
+      "All terms between you and the developer or bank are managed online. You can view the terms you’ve offered, send revisions, if need be all online. You can also view and manage important documents like offer letters online.",
+  },
+];
+
+const HereIsWhy = () => {
+  return (
+    <div className="flex flex-col justify-center p-14 giddaa-bg-light-accent-green">
+      <h2 className="giddaa-heading-two-b-millik pt-2 giddaa-primary text-center">
+        {`Here's Why!`}
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hover:bg[#F5F5DE]">
+        {cards.map((card, i) => (
+          <div
+            key={i}
+            className="flex flex-col items-center gap-2 bg-white border rounded-xl p-5"
+          >
+            <div className="w-20 h-20 flex justify-center items-center border border-primary rounded-full">
+              <img src={`/src/assets/icons/${card.icon}`} alt={card.icon} />
+            </div>
+            <span className="gidda-why-title text-primary text-center">{card.title}</span>
+            <p className="gidda-why-content text-center">{card.message}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default HereIsWhy;

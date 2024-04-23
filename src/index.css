@@ -447,6 +447,99 @@
     opacity: 1;
   }
 
+  .gidda-review-message {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 20%;
+  }
+  .gidda-review-reviewer {
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .gidda-why-title {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .gidda-why-content {
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .gidda-serve-title {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    color: #0a7e32;
+  }
+
+  .gidda-title {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    color: #335f32;
+  }
+  .gidda-serve-content {
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .gidda-number {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #335f32;
+  }
+
+  .gidda-how-it-works-title {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 36px;
+    color: #335f32;
+  }
+
+  .gidda-footer-header {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .gidda-footer-list {
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+  }
+
   /* .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
       box-shadow: none !important;
     } */
