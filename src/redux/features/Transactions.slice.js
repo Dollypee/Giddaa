@@ -1,50 +1,51 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { transactionApi } from "../services/transaction.api";
-// import { toast } from "@/components/Common";
+import { toast } from "react-toastify";
 
 const initialTransactionState = {
-  step: 0,
-  selectedQuestionId: null,
-  transactions:[]
+  transactionsSummary: [],
+  successfulTransactions: [],
+  expectedTransactions: [],
+  defaultTransactions: []
 };
 
 const transactionSlice = createSlice({
   name: "Transaction",
   initialState: initialTransactionState,
   reducers: {
-    prevStep: (state) => {
-      if (state.step !== 0) {
-        state.step -= 1;
-      }
-    },
-    nextStep: (state) => {
-      if (state.step !== 3) {
-        state.step += 1;
-      }
-    },
-    jumpToStep: (state, action) => {
-      state.step = action.payload;
-    },
-    updateQuizinfo: (state, action) => {
-      state.quizInfo = action.payload;
+    getTransactionSummary: (state, action) => {
+      state.transactionsSummary = action.payload
     },
   
   },
   extraReducers: (builder) => {
    
-    builder.addMatcher(transactionApi.endpoints.transactionSlice.matchFulfilled, (state) => {
-      // Handle the case where creating quiz failed
-      // You can revert any state changes or show an error message
-      if (state.step === 1) {
-        state.step -= 1;
-      }
-      
+    builder.addMatcher(transactionApi.endpoints.getSuccessfulTransactions.matchFulfilled, (state, action) => {
+      state.successfulTransactions = action.payload.value   
+    });
+    builder.addMatcher(transactionApi.endpoints.getSuccessfulTransactions.matchRejected, (state) => {
+      state.successfulTransactions = {}   
+      toast.error('Failed to fetch Successful Transactions')
+    });
+    builder.addMatcher(transactionApi.endpoints.getExpectedTransactions.matchFulfilled, (state, action) => {
+      state.expectedTransactions = action.payload.value   
+    });
+    builder.addMatcher(transactionApi.endpoints.getExpectedTransactions.matchRejected, (state) => {
+      state.expectedTransactions = {}   
+      toast.error('Failed to fetch Expected Transactions')
+    });
+    builder.addMatcher(transactionApi.endpoints.getDefaultTransactions.matchFulfilled, (state, action) => {
+      state.defaultTransactions = action.payload.value   
+    });
+    builder.addMatcher(transactionApi.endpoints.getDefaultTransactions.matchRejected, (state) => {
+      state.defaultTransactions = {}   
+      toast.error('Failed to fetch Default Transactions')
     });
   },
 });
 
 export default transactionSlice.reducer;
 
-export const { ...actions } = transactionSlice.actions;
+export const { getTransactionSummary } = transactionSlice.actions;
 
-export const selectTransactionState = (state) => state.Transactions.transactions;
+export const selectTransaction = (state) => state.Transaction.transactions;

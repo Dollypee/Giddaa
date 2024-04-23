@@ -1,34 +1,23 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from 'prop-types'
-
+import { useUser } from "../../hooks/user.hooks";
 
 
 const ProtectedRoute = ({ children }) => {
   const navigate = useNavigate();
+  const { token } = useUser();
 
-  const tokenFromLocalStorage = localStorage.getItem("decryptedResponse");
-  const parsedToken = tokenFromLocalStorage
-    ? JSON.parse(tokenFromLocalStorage)
-    : null;
-
-  // Check if a valid token exists in local storage
-  const isValidToken =
-    parsedToken &&
-    parsedToken.data &&
-    parsedToken.data.payload &&
-    parsedToken.data.payload.token;
 
   useEffect(() => {
-    if (isValidToken) {
-      navigate('/dashboard/transactions')
+    if (token) {
+      navigate('/admin/transactions')
     }
-  }, [navigate, isValidToken]);
+  }, [navigate, token]);
 
-  if (!isValidToken) {
+  if (!token) {
     // If no valid token is present, navigate to the login page
-    // return <Navigate to="/" state={{ from: location }} replace />;
-    navigate('/')
+    navigate('/login')
   }
 
   return (

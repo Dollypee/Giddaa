@@ -10,11 +10,13 @@ import AdminDashboardLayout from "./layouts/AdminDashboardLayout";
 import Home from "./pages/Home";
 import ProtectedRoute from "./pages/auth/ProtectedRoute";
 import Transactions from "./pages/admin/transactions";
-
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 // Import other components for routes
 
 const AppRouter = () => (
   <Router>
+    <ToastContainer />
     <Routes>
 
       {/* Routes not needing authentication */}

@@ -7,6 +7,7 @@ import Turtle from "./turtle.png"
 import Rabbit from "./rabbit.png"
 import Horse from "./horse.png"
 import ListStyle_RightArrow from "./listpointer.svg"
+import Logo from "./Logo.png"
 
 
 export {
@@ -18,5 +19,6 @@ export {
   Turtle,
   Rabbit,
   Horse,
-  ListStyle_RightArrow
+  ListStyle_RightArrow,
+  Logo
 }

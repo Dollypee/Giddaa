@@ -4,13 +4,10 @@ export const adminApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     adminLogin: builder.mutation({
       query: (credentials) => ({
-        url: "AdminUser/AdminLogin",
+        url: "account/login",
         method: "POST",
         body: credentials,
       }),
-    }),
-    protected: builder.mutation({
-      query: () => "protected",
     }),
   }),
 });

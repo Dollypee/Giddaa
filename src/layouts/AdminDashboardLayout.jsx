@@ -1,4 +1,4 @@
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
@@ -20,7 +20,7 @@ const AdminDashboardLayout = ({ children }) => {
   useEffect(() => {
     function handleResize() {
       // Check if the screen width is greater than a certain value (e.g., 1024 pixels)
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth > 1023) {
         setOpen(true);
       } else {
         setOpen(false);
@@ -51,22 +51,22 @@ const AdminDashboardLayout = ({ children }) => {
     }
   }, [location.pathname]);
 
-  const width = "240px";
-  const height = "60px";
+  const width = "330px";
+  const height = "10px";
 
   return (
     <>
       <div className="flex">
         <div className="flex">
-        <Sidebar isSidebarOpen={open} handleOpen={handleOpen} width={width} />
+          <Sidebar isSidebarOpen={open} handleOpen={handleOpen} width={width} />
         </div>
-      <div className="flex-1" style={{ marginLeft: `${(open&&window.innerWidth > 1023) ? width : '0'}` }}>
-        <Navbar toggleSidebar={() => setOpen(!open)} height={height} navHeading={navHeading}open={open} />
-        <div className={`mx-3 xl:mx-9 mb-4 lg:mb-8 mt-3 lg:mt-6 p-6 lg:p-8 bg-white rounded-md`} style={{ height: `${window.innerWidth > 1024 ? '87vh' : 'auto'}`, overflowY: "auto" }}>
-          {children}
+        <div className={`flex-1`} style={{ marginLeft: `${(open && window.innerWidth > 1023) ? width : '0'}` }}>
+          <Navbar toggleSidebar={() => setOpen(!open)} height={height} navHeading={navHeading} open={open} />
+          <div className={`ml-4 lg:ml-7 xl:ml-9 mb-4 lg:mb-8 mt-3 bg-white rounded-md`} style={{ height: `${window.innerWidth > 1024 ? '95vh' : 'auto'}`, overflowY: "auto" }}>
+            {children}
+          </div>
         </div>
-        </div>
-        
+
       </div>
     </>
 

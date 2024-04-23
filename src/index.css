@@ -413,6 +413,10 @@
     color: var(--dark-grey-4b4b4b);
   }
 
+  .giddaa-dark-grey-2{
+    color: var(--giddaa-color-707070)
+  }
+
   .giddaa-text-off-white{
     color: var(--giddaa-color-fcfcfc);
   }

@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { toast } from "@/components/Common";
-import { adminApi } from "../services/admin.api";
 
 const initialAuthState = {
   user: null,
@@ -12,28 +10,31 @@ const authSlice = createSlice({
   initialState: initialAuthState,
   reducerPath: 'auth',
   reducers: {
-    logout: () => {
-      return initialAuthState;
+    setUser: (
+      state,
+      action
+    ) => {
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          user: action.payload.user,
+          token: action.payload.token
+        })
+      );   
+      state.user = action.payload.user;
+      state.token = action.payload.token;
+    },
+    logout: (state) => {
+      localStorage.clear();
+      state.user = null;
+      state.token = null;
     },
   },
-  extraReducers: (builder) => {
-    builder.addMatcher(adminApi.endpoints.adminLogin.matchFulfilled, (state, { payload }) => {
-      state.token = payload.data.token;
-      state.user = { ...payload.data.adminDetails, isAdmin: true };
-    });
-
-    // builder.addMatcher(adminApi.endpoints.adminLogin.matchRejected, (state, { payload }) => {
-    //   toast({
-    //     status: "error",
-    //     title: "Failed to login",
-    //     description: payload.data.message,
-    //   });
-    // });
-  },
+  
 });
 
-export const { logout } = authSlice.actions;
+export const { setUser, logout } = authSlice.actions;
 
 export default authSlice.reducer;
 
-export const selectCurrentUser = (state) => state.auth.user;
+export const selectAuth = (state) => state.auth.user;

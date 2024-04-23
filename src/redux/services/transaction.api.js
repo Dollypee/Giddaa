@@ -2,17 +2,32 @@ import { baseApi } from "./api";
 
 export const transactionApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
-    getTransactions: builder.mutation({
-      query: (credentials) => ({
-        url: "AdminUser/AdminLogin",
-        method: "POST",
-        body: credentials,
+    getTransactionsSummary: builder.mutation({
+      query: () => ({
+        url: "developer/transaction/get-summary",
+        method: "GET",
       }),
     }),
-    protected: builder.mutation({
-      query: () => "protected",
+    getSuccessfulTransactions: builder.mutation({
+      query: (pageNumber) => ({
+        url: `developer/transaction/get-succesful-payments?pageNumber=${pageNumber}`,
+        method: "GET",
+      }),
     }),
+    getExpectedTransactions: builder.mutation({
+      query: (pageNumber) => ({
+        url: `developer/transaction/get-expected-payments?pageNumber=${pageNumber}`,
+        method: "GET",
+      }),
+    }),
+    getDefaultTransactions: builder.mutation({
+      query: (pageNumber) => ({
+        url: `developer/transaction/get-missed-payments?pageNumber=${pageNumber}`,
+        method: "GET",
+      }),
+    }),
+    
   }),
 });
 
-export const { useGetTransactionsMutation } = transactionApi;
+export const { useGetTransactionsSummaryMutation, useGetSuccessfulTransactionsMutation, useGetExpectedTransactionsMutation, useGetDefaultTransactionsMutation } = transactionApi;
