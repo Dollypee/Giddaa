@@ -1,3 +1,4 @@
+import BusinessOwnerInvestor from "../components/landingpage/BusinessOwnerInvestor"
 import Footer from "../components/landingpage/Footer"
 import GetStarted from "../components/landingpage/GetStarted"
 import HereIsWhy from "../components/landingpage/HereIsWhy"
@@ -55,6 +56,9 @@ const Home = () => {
       {/* Public Sector Section */}
       <PublicSectorWork />
 
+      {/* Business Owner Investor */}
+      <BusinessOwnerInvestor />
+      
       {/* How it Works Section */}
       <HowItWorks />
 

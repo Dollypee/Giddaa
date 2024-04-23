@@ -91,7 +91,7 @@ const NavMenu = () => {
         {isSidebarOpen && (
           <div className="lg:hidden">
             {/* Sidebar content */}
-            <div className={`top-0 right-0 fixed bg-white h-screen z-100 p-4 pt-3 flex flex-col ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
+            <div className={`top-0 right-0 fixed bg-white h-full z-100 p-4 pt-3 flex flex-col ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
               } ease-in-out duration-300 inset-y-0 z-50 w-56 transform transition-transform`}>
               <button className="text-xl text-center p-3 flex justify-end" onClick={toggleSidebar}>x</button>
               <ul className="flex flex-col justify-start items-start">

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const cards = [
   {
     icon: "scam-free.svg",
@@ -50,22 +52,25 @@ const cards = [
 ];
 
 const HereIsWhy = () => {
+  const [hoverState, setHoverState] = useState(null)
   return (
     <div className="flex flex-col justify-center p-14 giddaa-bg-light-accent-green">
       <h2 className="giddaa-heading-two-b-millik pt-2 giddaa-primary text-center">
         {`Here's Why!`}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 hover:bg[#F5F5DE]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cards.map((card, i) => (
           <div
             key={i}
-            className="flex flex-col items-center gap-2 bg-white border rounded-xl p-5"
+            onMouseEnter={() => setHoverState(i)}
+            onMouseLeave={() => setHoverState(null)}
+            className={`flex flex-col items-center gap-2 border rounded-xl p-5 ${(hoverState === i) ? 'bg-[#F5F5DE]' : 'bg-white'}`}
           >
-            <div className="w-20 h-20 flex justify-center items-center border border-primary rounded-full">
+            <div className={`w-20 h-20 flex justify-center items-center ${(hoverState === i) && 'border border-primary rounded-full'}`}>
               <img src={`/src/assets/icons/${card.icon}`} alt={card.icon} />
             </div>
-            <span className="gidda-why-title text-primary text-center">{card.title}</span>
+            <span className={`gidda-why-title text-center ${(hoverState === i) ? 'text-black' : 'text-primary'}`}>{card.title}</span>
             <p className="gidda-why-content text-center">{card.message}</p>
           </div>
         ))}
