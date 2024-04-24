@@ -122,8 +122,8 @@ const Sidebar = ({ isSidebarOpen, handleOpen }) => {
                       className={`ml-8 flex flex-row items-stretch cursor-pointer py-2 rounded-lg justify-center px-3${
                         activeLink === index &&
                         subItem.path === window.location.pathname
-                          ? "loxford-heading-five loxford-button-orange font-bold"
-                          : "loxford-blue"
+                          ? "giddaa-heading-five "
+                          : ""
                       }`}
                     >
                       <span className="whitespace-nowrap">{subItem.label}</span>
@@ -135,16 +135,16 @@ const Sidebar = ({ isSidebarOpen, handleOpen }) => {
         ))}
       </ul>
 
-      <div className="absolute bottom-3">
+      <div className="absolute bottom-8 border-t-2 pt-3 w-full">
         <button
           className="cursor-pointer font-bold text-[#C11111] flex items-center space-x-2 pl-7"
           onClick={() => {
             handleLogout();
-            navigate("/login");
+            // navigate("/login");
           }}
         >
           
-          <span>Log out</span> <FiLogOut />
+          <span>LOG OUT</span> <FiLogOut />
         </button>
       </div>
     </div>

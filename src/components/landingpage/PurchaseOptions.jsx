@@ -39,22 +39,29 @@ const PurchaseOptions = () => {
 
           <div className="pt-3">
             <h2 className="giddaa-heading-four-millik giddaa-primary text-center">Features of Mortgages</h2>
-            <ul className={`list-image-[url("../../assets/images/listpointer.svg")]`}>
-              <li className="">
-              <span className="inline"><ListStyleRightArrow/> </span>
+            <ul>
+              <li className="flex space-x-2">
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
                 <span className="giddaa-normal-text-two"> For budget conscious people without the money to make large payments.</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Mostly offered by banks & financial institutions</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Mostly offered by banks & financial institutions</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Typically attracts payment of interest</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Typically attracts payment of interest</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Payment periods are usually long term <span className="font-bold">(Typically between 10 - 30 years)</span></span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Payment periods are usually long term <span className="font-bold">(Typically between 10 - 30 years)</span></span>
               </li>
-              <li className="flex">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Monthly Payments are fixed, meaning it remains the same throughout the payment period. For example, you pay N150,000 in Month 1, you’ll pay N150,000 in Month 70. The payment remains the same over time.</span>
+              <li className="flex space-x-2">
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Monthly Payments are fixed, meaning it remains the same throughout the payment period. For example, you pay N150,000 in Month 1, you’ll pay N150,000 in Month 70. The payment remains the same over time.</span>
               </li>
             </ul>
           </div>
@@ -87,22 +94,29 @@ const PurchaseOptions = () => {
 
           <div className="pt-3">
             <h2 className="giddaa-heading-four-millik giddaa-primary text-center">Features of Payment Plans</h2>
-            <ul className={`list-image-[url("../../assets/images/listpointer.svg")]`}>
-              <li className="">
-              <span className="inline"><ListStyleRightArrow/> </span>
+            <ul>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
                 <span className="giddaa-normal-text-two"> For people who want pocket friendly options, but don’t want to pay interest</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Mostly offered by property Developers</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Mostly offered by property Developers</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Usually zero (0%) interest. Payment plans usally don’t attract interest.</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Usually zero (0%) interest. Payment plans usally don’t attract interest.</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Payment periods are usually short term  <span className="font-bold">(6 Months - 3 Years)</span></span>
+              <li className="flex space-x-2">
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Payment periods are usually short term  <span className="font-bold">(6 Months - 3 Years)</span></span>
               </li>
-              <li className="flex">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Like ,mortgages, monthly payments are also fixed, but may change if the property developer experiences issues during development. If periodic payments are subject to change, the developer usually states it in your offer letter.</span>
+              <li className="flex space-x-2">
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Like ,mortgages, monthly payments are also fixed, but may change if the property developer experiences issues during development. If periodic payments are subject to change, the developer usually states it in your offer letter.</span>
               </li>
             </ul>
           </div>
@@ -113,7 +127,7 @@ const PurchaseOptions = () => {
         </div>
 
         <div className="giddaa-bg-light-grey rounded-2xl px-3 py-6 hover:border-[3px] hover:border-primary hover:cursor-pointer lg:w-[30%] mt-6 lg:mt-0">
-        <div className="flex">
+          <div className="flex">
             <div className="w-[10%]">
               <img src={Rabbit} alt="rabbit icon" />
             </div>
@@ -135,22 +149,30 @@ const PurchaseOptions = () => {
 
           <div className="pt-3">
             <h2 className="giddaa-heading-four-millik giddaa-primary text-center">Features of Outright Purchase</h2>
-            <ul className={`list-image-[url("../../assets/images/listpointer.svg")]`}>
-              <li className="">
-              <span className="inline"><ListStyleRightArrow/> </span>
+            <ul>
+              <li className="flex space-x-2">
+
+                <span className="inline"><ListStyleRightArrow /> </span>
                 <span className="giddaa-normal-text-two"> For people who have the ability to make large purchases at once.</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Mostly offered by property Developers</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Mostly offered by property Developers</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> Usually zero (0%) interest. Payment plans usally don’t attract interest.</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> Usually zero (0%) interest. Payment plans usally don’t attract interest.</span>
               </li>
-              <li className="">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> There are no payment periods. This requires a one-time payment.</span>
+              <li className="flex space-x-2">
+
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> There are no payment periods. This requires a one-time payment.</span>
               </li>
-              <li className="flex">
-                <span className="giddaa-normal-text-two"><ListStyleRightArrow/> This requires one lump sum payment, upon which the property is fully yours.</span>
+              <li className="flex space-x-2">
+                <span className="inline pt-2"><ListStyleRightArrow /> </span>
+                <span className="giddaa-normal-text-two"> This requires one lump sum payment, upon which the property is fully yours.</span>
               </li>
             </ul>
           </div>

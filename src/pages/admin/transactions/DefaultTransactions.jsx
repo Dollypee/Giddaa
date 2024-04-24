@@ -6,7 +6,7 @@ import { MdDataUsage, MdMoreVert } from "react-icons/md"
 import { calculateDaysOverdue, formatAmount, formatDate, isArray, isEmpty } from "../../../components/helpers/helper"
 import { TableFooter } from "../../../components/tables/TableFooter"
 import ActionModal from "../../../components/modal/actionmodal"
-import { MoneyIcon } from "../../../assets/icons/Icon"
+import { MoneyIcon, ReminderIcon } from "../../../assets/icons/Icon"
 
 const DefaultTransactions = ({ transactionSummary, isLoading }) => {
 
@@ -237,7 +237,13 @@ const DefaultTransactions = ({ transactionSummary, isLoading }) => {
           isOpen={showModal} onClose={() => setShowModal(false)}
           rowData={selectedRowData}
           child1={<div
-            className="py-2 rounded hover:text-primary flex cursor-pointer"
+            className="p-2  rounded hover:text-primary flex cursor-pointer"
+            onClick={() => { setShowModal(false) }}
+          >
+            <ReminderIcon /> <span>Remind Customer</span>
+          </div>}
+          child2={<div
+            className="p-2 rounded hover:text-primary flex cursor-pointer"
             onClick={() => { setShowModal(false) }}
           >
             <MoneyIcon /> <span>View Repayment Schedule</span>

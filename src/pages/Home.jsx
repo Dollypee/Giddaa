@@ -11,6 +11,7 @@ import PrivateSectorWork from "../components/landingpage/PrivateSectorWork"
 import Property from "../components/landingpage/Property"
 import PublicSectorWork from "../components/landingpage/PublicSectorWork"
 import PurchaseOptions from "../components/landingpage/PurchaseOptions"
+import Section from "../components/landingpage/Section"
 import TrustedPartners from "../components/landingpage/TrustedPartners"
 import TrustedPersons from "../components/landingpage/TrustedPersons"
 import WhoWeServe from "../components/landingpage/WhoWeServe"
@@ -21,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-      
+
       {/* Navbar Section */}
       <NavMenu />
 
@@ -45,20 +46,28 @@ const Home = () => {
       <HereIsWhy />
 
       {/* Who We Serve Section */}
-      <WhoWeServe />
+      <Section>
+        <WhoWeServe />
+      </Section>
 
       {/* Naija Remote Work Section */}
-      <NaijaRemoteWork />
-      
+      <Section>
+
+        <NaijaRemoteWork />
+      </Section>
+
       {/* Private Sector Section */}
-      <PrivateSectorWork />
-
+      <Section>
+        <PrivateSectorWork />
+      </Section>
       {/* Public Sector Section */}
-      <PublicSectorWork />
-
+      <Section>
+        <PublicSectorWork />
+      </Section>
       {/* Business Owner Investor */}
-      <BusinessOwnerInvestor />
-      
+      <Section>
+        <BusinessOwnerInvestor />
+      </Section>
       {/* How it Works Section */}
       <HowItWorks />
 

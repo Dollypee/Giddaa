@@ -190,7 +190,7 @@ const ExpectedTransactions = () => {
           isOpen={showModal} onClose={() => setShowModal(false)}
           rowData={selectedRowData}
           child1={<div
-            className="py-2 rounded hover:text-primary flex cursor-pointer"
+            className="p-2 rounded hover:text-primary flex cursor-pointer"
             onClick={() => { setShowModal(false) }}
           >
            <MoneyIcon /> <span>View Repayment Schedule</span>
@@ -200,7 +200,6 @@ const ExpectedTransactions = () => {
         <div className="mt-3">
           <TableFooter
             empty={isEmpty(tableData)}
-            // loading={invoice.isLoading}
             pageNumber={currentPage}
             totalPages={totalPages}
             prevOnClick={() => setCurrentPage(previousPage)}

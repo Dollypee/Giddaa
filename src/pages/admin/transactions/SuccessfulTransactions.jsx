@@ -151,19 +151,19 @@ const SuccessfulTransactions = () => {
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex flex-col">
-                      <span>{formatAmount(transaction?.amount)}</span>
+                      <span>N{formatAmount(transaction?.amount)}</span>
                       <span className="giddaa-primary">(100%)</span>
                     </div>
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex flex-col">
-                      <span>{formatAmount(transaction?.organizationAmount)}</span>
+                      <span>N{formatAmount(transaction?.organizationAmount)}</span>
                       <span className="giddaa-primary">(97%)</span>
                     </div>
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex flex-col">
-                      <span>{formatAmount(transaction?.giddaaAmount)}</span>
+                      <span>N{formatAmount(transaction?.giddaaAmount)}</span>
                       <span className="giddaa-primary">(3%)</span>
                     </div>
 
@@ -198,13 +198,13 @@ const SuccessfulTransactions = () => {
           isOpen={showModal} onClose={() => setShowModal(false)}
           rowData={selectedRowData}
           child1={<div
-            className="py-2 rounded hover:text-primary border-b cursor-pointer"
+            className="py-2 text-center rounded hover:text-primary border-b cursor-pointer"
             onClick={() => { setShowModal(false) }}
           >
             View Receipt
           </div>}
           child2={<div
-            className="py-2 rounded hover:text-primary cursor-pointer"
+            className="p-2 rounded hover:text-primary cursor-pointer"
             onClick={() => { setShowModal(false) }}
           >
             Download Receipt
@@ -213,7 +213,7 @@ const SuccessfulTransactions = () => {
         <div className="mt-3">
           <TableFooter
             empty={isEmpty(tableData)}
-            // loading={invoice.isLoading}
+            loading={isSuccessTransactionsLoading}
             pageNumber={currentPage}
             totalPages={totalPages}
             prevOnClick={() => setCurrentPage(previousPage)}

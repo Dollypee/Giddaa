@@ -9,6 +9,9 @@ export default {
       colors: {
         primary: "#335f32",
       },
+      backgroundImage: {
+        'parallax': 'url("./public/we-serve.png")'
+      }
     },
   },
   plugins: [],
