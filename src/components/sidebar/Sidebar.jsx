@@ -65,7 +65,7 @@ const Sidebar = ({ isSidebarOpen, handleOpen }) => {
 
   return (
     <div
-      className={`top-0 left-0 fixed giddaa-bg-light-grey h-full z-10 pl-4 pr-1 pt-6 flex flex-col ${
+      className={`top-0 left-0 fixed giddaa-bg-light-grey h-full z-10 pr-1 pt-6 flex flex-col ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } ease-in-out duration-300`}
       // style={{ width: width }}
@@ -79,13 +79,13 @@ const Sidebar = ({ isSidebarOpen, handleOpen }) => {
         </button>
       )}
 
-      <img src={Logo} alt="Giddaa Logo" className="mt-8 object-contain w-[108px] h-[104px]" />
+      <img src={Logo} alt="Giddaa Logo" className="mt-2 object-contain w-[108px] h-[104px] mr-auto pl-3" />
 
       <ul style={{ height: "400px", zIndex: 9999 }} className="w-full">
         {links.map((link, index) => (
           <li key={index} className="flex flex-col mt-3 justify-center w-full">
             <Button
-              className={`cursor-pointer bg-transparent giddaa-subtitle-three w-full ${
+              className={`cursor-pointer bg-transparent giddaa-small-text-two w-full ${
                 index === activeLink
                   && "giddaa-primary font-bold border-r-4 border-r-primary"
               }`}

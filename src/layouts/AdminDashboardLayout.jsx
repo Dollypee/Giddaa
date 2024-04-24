@@ -51,7 +51,7 @@ const AdminDashboardLayout = ({ children }) => {
     }
   }, [location.pathname]);
 
-  const width = "330px";
+  const width = "270px";
   const height = "10px";
 
   return (
@@ -62,7 +62,7 @@ const AdminDashboardLayout = ({ children }) => {
         </div>
         <div className={`flex-1`} style={{ marginLeft: `${(open && window.innerWidth > 1023) ? width : '0'}` }}>
           <Navbar toggleSidebar={() => setOpen(!open)} height={height} navHeading={navHeading} open={open} />
-          <div className={`ml-4 lg:ml-7 xl:ml-9 mb-4 lg:mb-8 mt-3 bg-white rounded-md`} style={{ height: `${window.innerWidth > 1024 ? '95vh' : 'auto'}`, overflowY: "auto" }}>
+          <div className={`ml-4 lg:ml-7 xl:ml-9 mb-4 lg:mb-8 mt-3 bg-white rounded-md`} style={{ minHeight: `${window.innerWidth > 1024 ? '98vh' : 'auto'}`, overflowY: "auto" }}>
             {children}
           </div>
         </div>
