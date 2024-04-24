@@ -13,7 +13,7 @@ const points = [
 const NaijaRemoteWork = () => {
   return (
     <div className="flex flex-col gap-8 giddaa-bg-light-accent-green p-14">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
+      <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 bg-white rounded-full">
             <NaijaRemoteIcon />

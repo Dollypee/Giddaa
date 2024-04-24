@@ -135,9 +135,9 @@ const Sidebar = ({ isSidebarOpen, handleOpen }) => {
         ))}
       </ul>
 
-      <div className="absolute bottom-8 border-t-2 pt-3 w-full">
+      <div className="absolute bottom-8 border-t-2 pt-3 w-[90%]">
         <button
-          className="cursor-pointer font-bold text-[#C11111] flex items-center space-x-2 pl-7"
+          className="cursor-pointer font-bold text-[#C11111] flex items-center space-x-2 pl-6"
           onClick={() => {
             handleLogout();
             // navigate("/login");
@@ -155,5 +155,6 @@ export default Sidebar;
 
 Sidebar.propTypes = {
   isSidebarOpen: PropTypes.bool.isRequired,
-  handleOpen: PropTypes.func.isRequired
+  handleOpen: PropTypes.func.isRequired,
+  width: PropTypes.string
 }

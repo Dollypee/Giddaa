@@ -6,7 +6,7 @@ const points = ['Have A Place You Can Call Yours!', 'Don’t Let Rent Go Up On Y
 const PublicSectorWork = () => {
   return (
     <div className="giddaa-bg-light-accent-green flex flex-col gap-8 p-14">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
+      <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 rounded-full bg-white">
             <PublicSectorIcon

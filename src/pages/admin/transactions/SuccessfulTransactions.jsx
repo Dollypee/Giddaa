@@ -54,7 +54,7 @@ const SuccessfulTransactions = () => {
               <span className='flex justify-end'>
                 <AiOutlineInfoCircle />
               </span>
-              <span className='giddaa-heading-one'>{(successTransactions?.value?.totalRecords)}</span>
+              <span className='giddaa-heading-two-bold'>{(successTransactions?.value?.totalRecords)}</span>
               <span className='giddaa-normal-text-three'>Successful Transactions</span>
             </>
           )

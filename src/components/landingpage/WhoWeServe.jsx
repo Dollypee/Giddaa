@@ -25,7 +25,7 @@ const WhoWeServe = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-40">
+      <div className="flex flex-col lg:flex-row items-center lg:items-center gap-12 lg:gap-40">
         <div className="flex flex-col items-center lg:items-start gap-6">
           <div className="flex items-center w-24 h-24 p-4 bg-[#c3b40a] bg-opacity-[10%] rounded-full">
             <DiasporaIcon />

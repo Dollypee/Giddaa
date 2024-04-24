@@ -49,29 +49,29 @@ const DefaultTransactions = ({ transactionSummary, isLoading }) => {
 
   return (
     <div>
-      <div className='flex flex-col md:flex-row md:flex-wrap md:justify-between mt-4'>
-        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px] min-w-[250px] md:w-[48%] xl:w-[23%] ${isLoading && 'items-center justify-center'}`}>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 gap-2'>
+        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px] ${isLoading && 'items-center justify-center'}`}>
           {
             isLoading ? (<MdDataUsage className='animate-spin w-10 h-10' />) : (
               <>
                 <span className='flex justify-end'>
                   <AiOutlineInfoCircle />
                 </span>
-                <span className='giddaa-heading-one'>N{formatAmount(transactionSummary?.expectedEarnings)}</span>
+                <span className='giddaa-heading-two-bold'>N{formatAmount(transactionSummary?.expectedEarnings)}</span>
                 <span className='giddaa-normal-text-three'>Expected Earnings</span>
               </>
             )
           }
 
         </div>
-        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px] min-w-[250px] md:w-[48%] xl:w-[23%] ${isLoading && 'items-center justify-center'}`}>
+        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px]  ${isLoading && 'items-center justify-center'}`}>
           {
             isLoading ? (<MdDataUsage className='animate-spin w-10 h-10' />) : (
               <>
                 <span className='flex justify-end'>
                   <AiOutlineInfoCircle />
                 </span>
-                <span className='giddaa-heading-one'>N{formatAmount(transactionSummary?.averageAmountEarned)}</span>
+                <span className='giddaa-heading-two-bold'>N{formatAmount(transactionSummary?.averageAmountEarned)}</span>
                 <span className='giddaa-normal-text-three'>Total Default Amount</span>
               </>
             )
@@ -79,14 +79,14 @@ const DefaultTransactions = ({ transactionSummary, isLoading }) => {
 
         </div>
 
-        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px] min-w-[250px] md:w-[48%] xl:w-[23%] ${isLoading && 'items-center justify-center'}`}>
+        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px]    ${isLoading && 'items-center justify-center'}`}>
           {
             isLoading ? (<MdDataUsage className='animate-spin w-10 h-10' />) : (
               <>
                 <span className='flex justify-end'>
                   <AiOutlineInfoCircle />
                 </span>
-                <span className='giddaa-heading-one'>{(transactionSummary?.totalMissedTransactions)}</span>
+                <span className='giddaa-heading-two-bold'>{(transactionSummary?.totalMissedTransactions)}</span>
                 <span className='giddaa-normal-text-three'>Missed Payments</span>
               </>
             )
@@ -96,14 +96,14 @@ const DefaultTransactions = ({ transactionSummary, isLoading }) => {
 
 
 
-        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px] min-w-[250px] md:w-[48%] xl:w-[23%] ${isLoading && 'items-center justify-center'}`}>
+        <div className={`shadow-md border-2 border-[#F0F0F0] p-4 flex flex-col space-y-1 text-center min-h-[141px]    ${isLoading && 'items-center justify-center'}`}>
           {
             isLoading ? (<MdDataUsage className='animate-spin w-10 h-10' />) : (
               <>
                 <span className='flex justify-end'>
                   <AiOutlineInfoCircle />
                 </span>
-                <div className='giddaa-heading-one'><span className='text-[#C11111]'>{(transactionSummary?.totalApplicationsWithMissedTransactions)}</span> of <span>{transactionSummary?.totalApplicationsInTransactions}</span></div>
+                <div className='giddaa-heading-two-bold'><span className='text-[#C11111]'>{(transactionSummary?.totalApplicationsWithMissedTransactions)}</span> of <span>{transactionSummary?.totalApplicationsInTransactions}</span></div>
                 <span className='giddaa-normal-text-three'>Customers who’ve missed payment</span>
               </>
             )
