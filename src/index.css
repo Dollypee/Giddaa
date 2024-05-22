@@ -62,167 +62,6 @@
   --giddaa-line-spacing-80: 80px;
 }
 
-/* Character Styles */
-.body-regular-mobile-red-hat-display-—-12pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-12);
-  line-height: var(--giddaa-line-spacing-16);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-d8d8d8);
-}
-
-.body-small-mobile-red-hat-display-—-10pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-10);
-  line-height: var(--giddaa-line-spacing-12);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--dark-grey-4b4b4b);
-}
-
-.body-large-mobile-—-14pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-14);
-  line-height: var(--giddaa-line-spacing-20);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h1-mobile-—-24pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-24);
-  line-height: var(--giddaa-line-spacing-40);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--primary-335f32);
-}
-
-.h1-mobile-—-24pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-24);
-  line-height: var(--giddaa-line-spacing-40);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h2-mobile-millik-—-18pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-18);
-  line-height: var(--giddaa-line-spacing-80);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h3-mobile-millik-—-14pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-14);
-  line-height: var(--giddaa-line-spacing-17);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-fcfcfc);
-}
-
-.h1-desktop—-64pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-64);
-  line-height: var(--giddaa-line-spacing-80);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--primary-335f32);
-}
-
-.h1-desktop—-64pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-64);
-  line-height: var(--giddaa-line-spacing-80);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h2-desktop—-48pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-48);
-  line-height: var(--giddaa-line-spacing-80);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h2-desktop—-48pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-48);
-  line-height: var(--giddaa-line-spacing-80);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--primary-335f32);
-}
-
-.h3-desktop-—-32pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-32);
-  line-height: var(--giddaa-line-spacing-37);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.h4-desktop-—-24pt {
-  font-family: var(--giddaa-font-family-millik);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-24);
-  line-height: var(--giddaa-line-spacing-34);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.body-regular-desktop-—-20pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-16);
-  line-height: var(--giddaa-line-spacing-32);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.desktop-body-small-—-14pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-normal);
-  font-size: var(--giddaa-font-size-14);
-  line-height: var(--giddaa-line-spacing-24);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--giddaa-color-000000);
-}
-
-.desktop-secondary-body-large-—-18pt {
-  font-family: var(--giddaa-font-family-red-hat-display);
-  font-style: var(--giddaa-font-style-normal);
-  font-weight: var(--giddaa-font-weight-medium);
-  font-size: var(--giddaa-font-size-18);
-  line-height: var(--giddaa-line-spacing-32);
-  letter-spacing: var(--giddaa-character-spacing-0);
-  color: var(--dark-grey-4b4b4b);
-}
-
 
 @layer utilities {
   /* Font Styles*/
@@ -282,9 +121,17 @@
   .giddaa-heading-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 32px;
+  }
+
+  .giddaa-heading-three-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
   }
 
   .giddaa-heading-four {
@@ -293,6 +140,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
+  }
+
+  .giddaa-heading-four-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .giddaa-heading-five {
@@ -335,18 +190,26 @@
     line-height: 32px;
   }
 
+  .giddaa-normal-text-one-millik {
+    font-family: var(--giddaa-font-family-millik);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
   .giddaa-normal-text-two {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 32px;
   }
 
   .giddaa-normal-text-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--giddaa-font-weight-medium);
     font-size: 14px;
     line-height: 20px;
   }
@@ -370,7 +233,7 @@
   .giddaa-small-text-three {
     font-family: "Red Hat Display", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 12px;
     line-height: 12px;
   }
@@ -389,12 +252,32 @@
     color: var(--dark-grey-4b4b4b);
   }
 
-  .giddaa-bg-metrics{
+  .giddaa-dark-grey-2{
+    color: var(--giddaa-color-707070)
+  }
+
+  .giddaa-text-off-white{
+    color: var(--giddaa-color-fcfcfc);
+  }
+
+  .giddaa-bg-light-accent-green{
     background: var(--light-accent-green-f3faf2);
+  }
+
+  .giddaa-bg-tertiary-yellow {
+    background: var(--tertiary-yellow-f5f5de);
+  }
+
+  .giddaa-bg-light-grey{
+    background: var(--light-grey-f0f0f0);
   }
 
   .giddaa-bg-trusted-partners{
     background: var(--tertiary-yellow-f5f5de);
+  }
+
+  .giddaa-bg-trusted-persons{
+    background: var(--mid-accent-green-e9f5e7);
   }
 
   .giddaa-navbar {
@@ -416,6 +299,12 @@
 
   .giddaa-button-transparent {
     background-color: transparent;
+    color: var(--primary-335f32);
+    border: 2px solid var(--primary-335f32);
+  }
+
+  .giddaa-button-white {
+    background-color: white;
     color: var(--primary-335f32);
     border: 2px solid var(--primary-335f32);
   }
@@ -465,4 +354,204 @@
   border-radius: 20px;
   border: 1px solid grey;
   cursor: pointer;
+}
+
+/* Animate Styles */
+.animate-slide{
+  animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee .marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 50s linear infinite; /* Adjust duration as needed */
+}
+
+/* Landing Page Styles */
+
+.gidda-review-message {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 20%;
+}
+.gidda-review-reviewer {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.gidda-why-title {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+}
+.gidda-why-content {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.gidda-serve-title {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+  color: #0a7e32;
+}
+
+.gidda-title {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+  color: #335f32;
+}
+.gidda-serve-content {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gidda-number {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.gidda-how-it-works-title {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
+  color: #335f32;
+}
+
+.gidda-footer-header {
+  font-family: var(--giddaa-font-family-millik);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.gidda-footer-list {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+
+.trust-us-rect-transform{
+  transform: matrix(0.99, -0.1, 0.1, 0.99, 0, 0);
+}
+.trust-us-rect{
+  background: var(--white-ffffff);
+  box-shadow: 0px 3px 6px var(--primary-335f32);
+  border: 2px solid var(--primary-335f32);
+}
+
+/*Login Styles*/
+.app-login-container {
+  position: relative;
+  max-width: 680px;
+  /* width: 94%; */
+  margin: 0 auto;
+}
+
+.app-login-main-content {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.app-login-content {
+  padding: 35px 35px 20px;
+  width: 60%;
+}
+@media screen and (max-width: 575px) {
+  .app-login-content{
+    width: 100%;
+  }
+}
+
+.app-login-header {
+  margin-bottom: 30px;
+}
+
+.app-logo-content {
+  background-color: var(--primary-335f32);
+  padding: 35px 35px 20px;
+  width: 40%;
+  order: 2;
+}
+@media screen and (max-width: 575px) {
+  .app-logo-content{
+    width: 100%;
+    order: 1;
+  }
+}
+
+/* Section css */
+.section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.visible {
+  opacity: 1;
 }

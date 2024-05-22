@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#335f32",
+      },
+      backgroundImage: {
+        'parallax': 'url("./public/we-serve.png")'
+      }
+    },
   },
   plugins: [],
 }
